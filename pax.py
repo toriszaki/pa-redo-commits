@@ -1,3 +1,4 @@
+import random
 import math
 
 print("Welcome to my mystery program!")
@@ -10,8 +11,6 @@ c=float(input("P2x: "))
 print("P2x is " + str(c))
 d=float(input("P2y: "))
 print("P2y is " + str(d))
-import random
-import math
 pts = []
 
 pts.append((a,b))
