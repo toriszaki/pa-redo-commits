@@ -10,13 +10,13 @@ def get_numbers():
     print("P2x is " + str(c))
     d=float(input("P2y: "))
     print("P2y is " + str(d))
-    pts = []
-    pts.append((a,b))
-    pts.append((c,d))
-    pts.append((random.random() * 10 - 5, random.random() * 10 - 5))
-    print("P3x is " + str(pts[2][0]))
-    print("P3y is " + str(pts[2][1]))
-    return pts
+    points = []
+    points.append((a,b))
+    points.append((c,d))
+    points.append((random.random() * 10 - 5, random.random() * 10 - 5))
+    print("P3x is " + str(points[2][0]))
+    print("P3y is " + str(points[2][1]))
+    return points
 
 
 def calculate_distance():
