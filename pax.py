@@ -10,7 +10,6 @@ def get_numbers():
     print("P2x is " + str(b1_coordinate))
     b2_coordinate = float(input("P2y: "))
     print("P2y is " + str(b2_coordinate))
-    points = []
     points.append((a1_coordinate, a2_coordinate))
     points.append((b1_coordinate, b2_coordinate))
     points.append((random.random() * 10 - 5, random.random() * 10 - 5))
@@ -34,6 +33,7 @@ def calculate_distance():
 
 def main():
     print("Welcome to my mystery program!")
+    points = []
     points = get_numbers()
     a, b, x = calculate_distance(points)
     print("A " + str(a) + ", B" + str(b) + ", d:" + str(x) )
