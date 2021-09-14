@@ -25,8 +25,8 @@ def calculate_distance(points):
             if calculating_distance > distance:
                 distance = calculating_distance
                 first_endpoint = first_coor_to_compare
-                b = second_coor_to_compare
-    return first_endpoint, b, distance
+                second_endpoint = second_coor_to_compare
+    return first_endpoint, second_endpoint, distance
 
 
 def main():
@@ -35,7 +35,7 @@ def main():
     get_numbers(points, "A")
     get_numbers(points, "B")
     get_random_numbers(points, "C")
-    first_endpoint, b, x = calculate_distance(points)
-    print("A " + str(first_endpoint) + ", B" + str(b) + ", d:" + str(x) )
+    first_endpoint, second_endpoint, distance = calculate_distance(points)
+    print("A " + str(first_endpoint) + ", B" + str(second_endpoint) + ", d:" + str(distance))
 
 main()
