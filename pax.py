@@ -29,6 +29,7 @@ def calculate_distance():
                 x = math.sqrt(math.pow(p[1] - q[1], 2) + (p[0] - q[0]) * (p[0] - q[0]))
                 a = p
                 b = q
+    return a, b, x
 
 
 def main():
