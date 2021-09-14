@@ -2,8 +2,8 @@ import random
 import math
 
 def get_numbers():
-    a1_coordinate=float(input("P1x: "))
-    print("P1x is " + str(a1_coordinate))
+    a1_coordinate=float(input("Ax: "))
+    print("Ax is " + str(a1_coordinate))
     a2_coordinate=float(input("P1y: "))
     print("P1y is " + str(a2_coordinate))
     c=float(input("P2x: "))
