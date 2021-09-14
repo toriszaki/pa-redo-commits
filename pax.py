@@ -2,11 +2,13 @@ import random
 import math
 
 def get_numbers(points, point_name):
-    x_coordinate = float(input(f"{point_name}x: "))
-    print(f"{point_name}x is " + str(x_coordinate))
-    y_coordinate = float(input(f"{point_name}y: "))
-    print(f"{point_name}y is " + str(y_coordinate))
-    points.append((x_coordinate, y_coordinate))
+    coordinate = []
+    axis = ["x", "y"]
+    for index in range(len(axis)):
+        coordinate.append(float(input(f"{point_name}{axis[index]}: ")))
+        print(f"{point_name}{index} is " + str(coordinate[index]))
+    coordinates = (coordinate[0], coordinate[1])
+    points.append(coordinates)
 
 
 def get_random_numbers(points, point_name):
