@@ -1,7 +1,7 @@
 import random
 import math
 
-
+def get_number():
 a=float(input("P1x: "))
 print("P1x is " + str(a))
 b=float(input("P1y: "))
@@ -28,7 +28,7 @@ for p in pts[::-1]:
             a = p
             b = q
 
-print("A " + str(a) + ", B" + str(b) + ", d:" + str(x) )
 
 def main():
     print("Welcome to my mystery program!")
+    print("A " + str(a) + ", B" + str(b) + ", d:" + str(x) )
