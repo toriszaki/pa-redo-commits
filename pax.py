@@ -1,7 +1,7 @@
 import random
 import math
 
-def get_number():
+def get_numbers():
     a=float(input("P1x: "))
     print("P1x is " + str(a))
     b=float(input("P1y: "))
@@ -16,6 +16,7 @@ def get_number():
     pts.append((random.random() * 10 - 5, random.random() * 10 - 5))
     print("P3x is " + str(pts[2][0]))
     print("P3y is " + str(pts[2][1]))
+    return pts
 
 
 def calculate_distance():
@@ -32,4 +33,6 @@ def calculate_distance():
 
 def main():
     print("Welcome to my mystery program!")
+    get_numbers()
+    calculate_distance()
     print("A " + str(a) + ", B" + str(b) + ", d:" + str(x) )
