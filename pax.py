@@ -2,13 +2,13 @@ import random
 import math
 
 def get_numbers():
-    a1_coordinate=float(input("Ax: "))
+    a1_coordinate = float(input("Ax: "))
     print("Ax is " + str(a1_coordinate))
-    a2_coordinate=float(input("Ay: "))
+    a2_coordinate = float(input("Ay: "))
     print("Ay is " + str(a2_coordinate))
-    b1_coordinate=float(input("P2x: "))
+    b1_coordinate = float(input("P2x: "))
     print("P2x is " + str(b1_coordinate))
-    b2_coordinate=float(input("P2y: "))
+    b2_coordinate = float(input("P2y: "))
     print("P2y is " + str(b2_coordinate))
     points = []
     points.append((a1_coordinate, a2_coordinate))
