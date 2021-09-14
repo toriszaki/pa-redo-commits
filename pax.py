@@ -1,7 +1,6 @@
 import random
 import math
 
-print("Welcome to my mystery program!")
 
 a=float(input("P1x: "))
 print("P1x is " + str(a))
@@ -31,4 +30,5 @@ for p in pts[::-1]:
 
 print("A " + str(a) + ", B" + str(b) + ", d:" + str(x) )
 
-main()
+def main():
+    print("Welcome to my mystery program!")
