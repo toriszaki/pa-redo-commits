@@ -20,12 +20,12 @@ def get_random_numbers(points, point_name):
 def calculate_distance(points):
     distance = 0
     for first_coor_to_compare in points[::-1]:
-        for q in points[::-1]:
-            calculating_distance = math.sqrt(math.pow(first_coor_to_compare[1] - q[1], 2) + (first_coor_to_compare[0] - q[0]) * (first_coor_to_compare[0] - q[0]))
+        for second_coor_to_compare in points[::-1]:
+            calculating_distance = math.sqrt(math.pow(first_coor_to_compare[1] - second_coor_to_compare[1], 2) + (first_coor_to_compare[0] - second_coor_to_compare[0]) * (first_coor_to_compare[0] - second_coor_to_compare[0]))
             if calculating_distance > distance:
                 distance = calculating_distance
                 a = first_coor_to_compare
-                b = q
+                b = second_coor_to_compare
     return a, b, distance
 
 
