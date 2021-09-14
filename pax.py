@@ -11,7 +11,7 @@ def get_numbers():
     d=float(input("P2y: "))
     print("P2y is " + str(d))
     points = []
-    points.append((a,b))
+    points.append((a1_coordinate, a2_coordinate))
     points.append((c,d))
     points.append((random.random() * 10 - 5, random.random() * 10 - 5))
     print("P3x is " + str(points[2][0]))
