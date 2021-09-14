@@ -16,16 +16,16 @@ def get_random_numbers(points, point_name):
 
 
 def calculate_distance(points):
-    x = 0
+    distance = 0
     a = points[0]
     b = points[1]
     for p in points[::-1]:
         for q in points[::-1]:
-            if math.sqrt((p[0] - q[0]) * (p[0] - q[0]) + math.pow(p[1] - q[1], 2)) > x:
-                x = math.sqrt(math.pow(p[1] - q[1], 2) + (p[0] - q[0]) * (p[0] - q[0]))
+            if math.sqrt((p[0] - q[0]) * (p[0] - q[0]) + math.pow(p[1] - q[1], 2)) > distance:
+                distance = math.sqrt(math.pow(p[1] - q[1], 2) + (p[0] - q[0]) * (p[0] - q[0]))
                 a = p
                 b = q
-    return a, b, x
+    return a, b, distance
 
 
 def main():
