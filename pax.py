@@ -2,16 +2,12 @@ import random
 import math
 
 def get_numbers(points, point_name):
-    a1_coordinate = float(input("Ax: "))
-    print("Ax is " + str(a1_coordinate))
-    a2_coordinate = float(input("Ay: "))
-    print("Ay is " + str(a2_coordinate))
-    b1_coordinate = float(input("P2x: "))
-    print("P2x is " + str(b1_coordinate))
-    b2_coordinate = float(input("P2y: "))
-    print("P2y is " + str(b2_coordinate))
-    points.append((a1_coordinate, a2_coordinate))
-    points.append((b1_coordinate, b2_coordinate))
+    x_coordinate = float(input(f"{point_name}x: "))
+    print(f"{point_name}x is " + str(x_coordinate))
+    y_coordinate = float(input(f"{point_name}y: "))
+    print(f"{point_name}y is " + str(y_coordinate))
+    points.append((x_coordinate, y_coordinate))
+
 
 def get_random_numbers(points, point_name):
     points.append((random.random() * 10 - 5, random.random() * 10 - 5))
