@@ -1,7 +1,7 @@
 import random
 import math
 
-def get_numbers():
+def get_numbers(points, point_name):
     a1_coordinate = float(input("Ax: "))
     print("Ax is " + str(a1_coordinate))
     a2_coordinate = float(input("Ay: "))
@@ -34,6 +34,6 @@ def calculate_distance():
 def main():
     print("Welcome to my mystery program!")
     points = []
-    points = get_numbers()
+    get_numbers(points, point_name)
     a, b, x = calculate_distance(points)
     print("A " + str(a) + ", B" + str(b) + ", d:" + str(x) )
