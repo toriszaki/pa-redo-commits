@@ -12,10 +12,12 @@ def get_numbers(points, point_name):
     print("P2y is " + str(b2_coordinate))
     points.append((a1_coordinate, a2_coordinate))
     points.append((b1_coordinate, b2_coordinate))
+
+def get_random_numbers(points, point_name):
     points.append((random.random() * 10 - 5, random.random() * 10 - 5))
     print("P3x is " + str(points[2][0]))
     print("P3y is " + str(points[2][1]))
-    return points
+
 
 
 def calculate_distance():
@@ -35,5 +37,6 @@ def main():
     print("Welcome to my mystery program!")
     points = []
     get_numbers(points, point_name)
+    get_random_numbers(points, point_name)
     a, b, x = calculate_distance(points)
     print("A " + str(a) + ", B" + str(b) + ", d:" + str(x) )
