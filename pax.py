@@ -4,8 +4,8 @@ import math
 def get_numbers():
     a1_coordinate=float(input("Ax: "))
     print("Ax is " + str(a1_coordinate))
-    a2_coordinate=float(input("P1y: "))
-    print("P1y is " + str(a2_coordinate))
+    a2_coordinate=float(input("Ay: "))
+    print("Ay is " + str(a2_coordinate))
     c=float(input("P2x: "))
     print("P2x is " + str(c))
     d=float(input("P2y: "))
