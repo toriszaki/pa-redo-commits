@@ -32,3 +32,4 @@ for p in pts[::-1]:
 
 print("A " + str(a) + ", B" + str(b) + ", d:" + str(x) )
 
+main()
