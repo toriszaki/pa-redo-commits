@@ -33,6 +33,6 @@ def calculate_distance():
 
 def main():
     print("Welcome to my mystery program!")
-    get_numbers()
-    calculate_distance()
+    points = get_numbers()
+    a, b, x = calculate_distance(points)
     print("A " + str(a) + ", B" + str(b) + ", d:" + str(x) )
