@@ -13,8 +13,8 @@ def get_numbers(points, point_name):
 
 def get_random_numbers(points, point_name):
     points.append((random.random() * 10 - 5, random.random() * 10 - 5))
-    print(f"{point_name}x is " + str(points[2][0]))
-    print(f"{point_name}y is " + str(points[2][1]))
+    print(str(point_name) + "x is " + str(points[2][0]) + ", " + str(point_name) +"y is " + str(points[2][1]))
+    # print(f"{point_name}y is " + str(points[2][1]))
 
 
 def calculate_distance(points):
